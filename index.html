@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: #171717;
+	color: #ffffff;
+}
+.center {
+	margin: auto;
+	width: 30%;
+	text-align: center;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	font-weight: 100;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	animation: fadein1 ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: fowards;
+}
+
+.center2 {
+	margin: auto;
+	width: 40%;
+	text-align: center;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	font-weight: 100;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	animation: fadein2 ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.center3 {
+	margin: auto;
+	width: 40%;
+	text-align: center;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	font-weight: 100;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	animation: fadein3 ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein1 {
+	0% { 
+		opacity: 0; 
+	}
+	100% { 
+		opacity: 1; 
+	}
+}
+@keyframes fadein2 {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadein3 {
+	0% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+</style>
+</head>
+<body>
+<div class="center">
+<p>Devin Strachan</p>
+</div>
+<div class="center2">
+<p>About me</p>
+<p>I am a 19-year old undergraduate student attenting an Ontario university. Ideally, by the end of the year I will have declared a double major in computing and mathematics. I am interested in server operating systems and am currently reading ANSI C in hopes of being able to compose basic processes and command line utilities.</p>
+</div>
+<div class="center3">
+<p>Projects</p>
+<p>statusbar</p>
+<p>A primitive statusbar intended for dwm. It's really just a chain of text passed to xsetroot, grabbing info for battery and volume using upower and alsa, auto-updating every 60 seconds by calling itself again. I have set up my own dwm instance so that upon certain keystrokes (e.g. volume buttons) it calls the script in order to refresh it. It also displays the current keyboard map, and I had intended to show the state of auto-capitalization by capitalizing the map name when present but have not gotten around to doing so.</p>
+<p>ttrpgbot</p>
+<p>Basic bot used as a test of the Python Discord API. Intended to be used for virtual tabletop gaming sessions, so included commands to roll dice and join voice chat. Have not touched in a while, but had intended to look into playing audio from sources such as YouTube.</p>
+<p>manualmonster</p>
+<p>A work-in-progress attempt to create a webform storing input data as json and an interface to parse a collection of said json. Namesake is due to its intended purpose of organizing large amounts of data relating to monsters in a certain tabletop RPG.</p>
+</div>
+</body>
+</html>
